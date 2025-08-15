@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Particles from './components/Particles';
 import { useScroll, useTransform, motion } from 'framer-motion';

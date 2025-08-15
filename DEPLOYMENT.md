@@ -58,20 +58,12 @@ Vite outputs hashed assets—normal pushes will invalidate old bundles automatic
 | Old version showing | Browser cache | Hard refresh (Ctrl+Shift+R) |
 | Workflow fails at build | Lockfile mismatch | Delete `package-lock.json` and regenerate with `npm ci` |
 
-### Add SPA 404 Fallback (Recommended)
-Create `404.html` after each build OR add a post-build step. Simple approach:
-```
-# In a script or manually
-cp dist/index.html dist/404.html
-```
-You can automate by adding to `package.json` scripts if desired.
+### SPA 404 Fallback
+Already automated: a `postbuild` script copies `dist/index.html` to `dist/404.html` so client-side routes work on refresh.
+If you need cross-platform (Windows) support, replace the shell copy with a tiny Node script.
 
-## 10. Optional: Add 404 Copy Step
-Add script:
-```
-"postbuild": "cp dist/index.html dist/404.html"
-```
-(Keep portability in mind for Windows—could use a Node script.)
+## 10. Cross-platform 404 Copy (Optional)
+Create `scripts/copy404.mjs` and change postbuild to `node scripts/copy404.mjs` if Windows support is needed. Ask and I can add it.
 
 ---
 Need more help? Open an issue or ask your assistant.

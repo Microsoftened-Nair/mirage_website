@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+  "build": "vite build",
+  "postbuild": "cp dist/index.html dist/404.html || echo '404 copy skipped'",
   "preview": "vite preview",
   "deploy:local": "npm run build && npx --yes serve dist"
   },
