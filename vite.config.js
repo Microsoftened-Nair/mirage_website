@@ -17,7 +17,7 @@ function computeBase() {
 }
 
 export default defineConfig({
-  base: computeBase(),
+  base: '/mirage_website/',
         plugins: [react()],
   server: {
     port: 3000,
