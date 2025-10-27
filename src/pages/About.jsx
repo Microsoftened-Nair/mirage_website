@@ -19,6 +19,12 @@ const items = [
     </div>
   ) },
   { content: (
+  <div style={{ textAlign: 'center', color: 'white' }}>
+    <h2 style={{ margin: 0 }}>Baijunath Karvir</h2>
+    <p style={{ margin: 0, fontSize: '1.2rem' }}>Vice-President</p>
+  </div>
+  ) },
+  { content: (
     <div style={{ textAlign: 'center', color: 'white' }}>
       <h2 style={{ margin: 0 }}>Giriraj Baheti</h2>
       <p style={{ margin: 0, fontSize: '1.2rem' }}>Secretary</p>
@@ -32,13 +38,13 @@ const items = [
   ) },
   { content: (
     <div style={{ textAlign: 'center', color: 'white' }}>
-      <h2 style={{ margin: 0 }}>Remembering megh</h2>
+      <h2 style={{ margin: 0 }}>Vedang Sharanarthi</h2>
       <p style={{ margin: 0, fontSize: '1.2rem' }}>Tech Lead</p>
     </div>
   ) },
   { content: (
     <div style={{ textAlign: 'center', color: 'white' }}>
-      <h2 style={{ margin: 0 }}>Yug Patel</h2>
+      <h2 style={{ margin: 0 }}>Sandeep Sahoo</h2>
       <p style={{ margin: 0, fontSize: '1.2rem' }}>Management Lead</p>
     </div>
   ) },
