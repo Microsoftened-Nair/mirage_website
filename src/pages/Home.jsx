@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import TiltedCard from '../components/TiltedCard';
 import Particles from '../components/Particles';
+import heroImage from '../assets/image.png';
 
 const fadeVariants = {
   initial: { opacity: 0 },
@@ -66,7 +67,7 @@ export default function Home() {
           }}
         >
           <TiltedCard
-            imageSrc="./assets/image.png"
+            imageSrc={heroImage}
             altText="MIRAGE Logo"
             captionText="Mirage"
             containerHeight="40vh"

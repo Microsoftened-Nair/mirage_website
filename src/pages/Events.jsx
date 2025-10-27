@@ -4,13 +4,17 @@ import { motion } from 'framer-motion';
 import Aurora from '../components/Aurora';
 import DecryptedText from '../components/DecryptedText';
 import Stack from '../components/Stack';
+import eventPic1 from '../assets/pic1.jpg';
+import eventPic2 from '../assets/pic2.jpg';
+import eventPic3 from '../assets/pic3.jpg';
+import eventPic4 from '../assets/pic4.jpg';
 
 export default function Events() {
   const cardsData = [
-    { id: 1, img: '/assets/pic1.jpg' },
-    { id: 2, img: '/assets/pic2.jpg' },
-    { id: 3, img: '/assets/pic3.jpg' },
-    { id: 4, img: '/assets/pic4.jpg' }
+    { id: 1, img: eventPic1 },
+    { id: 2, img: eventPic2 },
+    { id: 3, img: eventPic3 },
+    { id: 4, img: eventPic4 }
   ];
 
   return (

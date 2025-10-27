@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Aurora from '../components/Aurora';
 import DecryptedText from '../components/DecryptedText';
 import TiltedCard from '../components/TiltedCard';
+import sihProjectImage from '../assets/SIH.png';
+import demoProjectImage from '../assets/Demo.png';
 
 export default function Projects() {
   return (
@@ -65,7 +67,7 @@ export default function Projects() {
             transition={{ duration: 0.3 }}
           >
             <TiltedCard
-              imageSrc="./assets/SIH.png"
+              imageSrc={sihProjectImage}
               altText="SIH Project"
               captionText="Smart India Hackathon"
               containerHeight="30vh"
@@ -97,7 +99,7 @@ export default function Projects() {
             transition={{ duration: 0.3 }}
           >
             <TiltedCard
-              imageSrc="./assets/Demo.png"
+              imageSrc={demoProjectImage}
               altText="Demo Project"
               captionText="Demo Project"
               containerHeight="30vh"
